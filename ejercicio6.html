@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+var salario = prompt("Insertar sueldo",)
+var antiguedad = prompt("Insertar años de antiguedad",)
+var nuevo_salario
+	if(salario < 500 && antiguedad >= 10){
+  	aumento = salario * 0.2
+    nuevo_salario = parseInt(salario) + parseInt(aumento)
+    document.write("Nuevo salario: " + nuevo_salario)
+  }else{
+  	if(salario < 500 && antiguedad < 10){
+    	aumento = salario * 0.05
+    	nuevo_salario = parseInt(salario) + parseInt(aumento)
+      document.write("Nuevo salario: " + nuevo_salario)
+    }
+  }
+  if(salario >= 500){
+  	document.write("Salario: " + salario)
+  }
+</script>
+</head>
+<body>
+</body>
+</html>

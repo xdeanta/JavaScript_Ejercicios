@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+var hora = prompt("Insertar hora en formato 24h:",)
+var tiempo = hora.split(":")
+var ihora = parseInt(tiempo[0])
+if(ihora >= 0 && ihora < 12){
+	alert("Buenos dias")
+}else{
+	if(ihora >= 12 && ihora < 20){
+  	alert("Buenas tardes")
+  }else{
+  	if(ihora >= 20 && ihora < 24){
+    	alert("buenas noches")
+    }
+  }
+}
+</script>
+</head>
+<body>
+</body>
+</html>

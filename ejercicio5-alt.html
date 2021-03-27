@@ -1,0 +1,10 @@
+var nombre = prompt("Introduce nombre: ","Nombre");
+var correo = prompt("Correo electrónico: ","@gmail");
+var pArroba = correo.indexOf("@");
+var pPunto = correo.indexOf(".");
+if (isNaN(pArroba)||(isNaN(pPunto))){
+	document.write("<b>Nombre: "+nombre+"</b></br>");
+	document.write("<i>Correo: "+correo+"</i></br>");	
+}else{
+ alert("Mail incorrecto mendrugo!");
+}
